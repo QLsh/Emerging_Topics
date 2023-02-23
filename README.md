@@ -21,7 +21,9 @@ After choosing the better model based on the overall scores of the model quality
   
 ## Specific problem-solving
     1. Poor data pre-processing: initially the data pre-processing is not working as expected because of the order we set it up. Lemmatization from `nltk` package remove ‘s’ at the end of all words without difference. So, in the next step when we were trying to remove the common words, some of the common words like ‘was’ was lemmatized as ‘wa’ and hence cannot be removed. The solution we used was simply changed the order of these two steps and the data-cleaning is much more efficient.
+    
     2. Difficult to calculate the quantification metrics: packages we used to calculate topic coherence is called `gensim`. When we tried to calculate the coherence score, some of the topics does not have available coherence score so we must calculate the coherence score per topic instead and write additional code to take the average to get the total coherence score.
+    
     3. Run model at scale: the other problem we encountered was to apply BERTopic model at scale. Because the BERTopic model runs over the whole dataset, it is difficult to distribute the work to different nodes in the clusters. However, the whole dataset is so huge that it took ages to run without distributing. The approach of solving this is sampling the dataset so that we were able to extract a set of topics for further study.
 What results did we get?
 
