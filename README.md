@@ -41,14 +41,13 @@ It is clearly shown that the overall score of BERTopic model is always higher th
 ## Topics over time
 By evaluating the static models, we chose the best performance static model and develop it into a dynamic model. This way we were not only able to extract topics from the corpus but also with the time stamp for each topic and its subtopics. The first few topics are shown in the tale below:
 
-![image](https://user-images.githubusercontent.com/90244300/220976262-a59884c5-463f-4dd7-9116-caef077d5efb.png)
-
+![line](https://user-images.githubusercontent.com/90244300/220979038-ed87a5c0-f7b9-48e6-b751-37d23d631d98.png)
 
 As the topics are ranked by frequencies of the topics. The first new topics with topics id -1 is considered as common words topics. In this case, the model still needs modifications because the queen’s death is also considered as noise in this case.
 
 The visualization of some representative topics over time is shown in the figure below:
 
-![image](https://user-images.githubusercontent.com/90244300/220976293-0edbfa7c-8de5-44a4-801b-aba126433dc6.png)
+![table](https://user-images.githubusercontent.com/90244300/220979175-1cb9fc01-3329-4769-bc30-17db62f97070.png)
 
 Each peak can also represent a subtopic of the general topic. We can use this graph to interpret the growth and death of a topic over time and analyse the feature of different type of topics.
 
