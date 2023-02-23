@@ -34,6 +34,7 @@ After the initial exploration of the static models, we evaluated the LDA topic m
 BERTopic model performs better in the topic diversity. When the vocabulary of the documents grows, it performs even better. Meanwhile, the result for topic coherence metric shows that topics extracted from LDA model has better coherence compared to BERTopic model. This might be caused by the number of key words of BERTopic is from 1 to 3. It can reduce the coherence by having repeated keywords.
 
 As it was stated in the previous section, the model quality is defined as the product of two metrics. Similar bar chart is presented in the following figure:
+
 ![image](https://user-images.githubusercontent.com/90244300/220976213-d873574b-3d54-4335-bf9d-9a8807e363e6.png)
 
 It is clearly shown that the overall score of BERTopic model is always higher than LDA topic model, which means that BERTopic model is overperforming LDA model no matter how many vocabularies are used as the inputs. 
